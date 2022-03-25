@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Raffled-Snakes
+See [live preview](https://www.netlify.com/) of this project
+
+-----------------------------------------------
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
