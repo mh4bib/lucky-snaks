@@ -1,0 +1,15 @@
+.root-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 0px 10px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.draw-section{
+    background-color: #fd9c0bad;
+    margin: 0px 10px;
+    border-radius: 10px;
+}

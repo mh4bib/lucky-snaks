@@ -1,10 +1,11 @@
 import './App.css';
-import SnacksBody from './Component/SnacksBody/SnacksBody';
+import Body from './Component/Body/Body';
 
 function App() {
   return (
     <div className="App">
-      <SnacksBody></SnacksBody>
+      <h1>Snacks Raffles</h1>
+      <Body></Body>
     </div>
   );
 }
