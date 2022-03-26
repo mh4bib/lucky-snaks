@@ -1,14 +1,15 @@
 import React from 'react';
 import './Cards.css'
 const Cards = (props) => {
-    const {name, picture, price} = props.card;
+    const {card, addToDraw} = props
+    const {name, picture, price} = card;
     return (
         <div className='card'>
             <div className='img-container'><img src={picture} alt=""/></div>
             <div className='card-desc'>
                 <h2>{name}</h2>
                 <p>price: {price}</p>
-                <button>select</button>
+                <button onClick={()=> addToDraw(card)}>select</button>
             </div>
         </div>
     );

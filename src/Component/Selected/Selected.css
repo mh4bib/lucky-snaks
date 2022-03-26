@@ -1,0 +1,17 @@
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.selected-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fd9c0b;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.selected-items p{
+    margin: 0;
+}
