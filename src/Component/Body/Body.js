@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Cards from '../Cards/Cards';
+import LuckyItem from '../LuckyItem/LuckyItem';
 import Selected from '../Selected/Selected';
 import './Body.css';
 
 const Body = () => {
     const [cards, setCards] = useState([]);
     const [items, setItems] = useState([]);
+    const [luckyItem, setLuckyItem] = useState([]);
 
     useEffect(()=>{
         fetch('fakedata.json')
@@ -25,6 +27,18 @@ const Body = () => {
         }
         setItems(newItems);
     };
+    const chooseBtn = (items)=>{
+        const random = Math.floor(Math.random()*10);
+        if(random >= items.length){
+            chooseBtn(items);  
+        }
+        else{
+            console.log(items[random]);
+            setLuckyItem(items[random]);
+        }
+        
+    }
+    // console.log(items);
 
     return (
         <div className='root-container'>
@@ -46,8 +60,10 @@ const Body = () => {
                     ></Selected>)
                 }
 
-               <button className='green-button'>choose random</button>
+               <button onClick={() => chooseBtn(items)} className='green-button'>choose random</button>
                <button className='red-button'>clear all</button>
+               
+               
             </div>
         </div>
     );
