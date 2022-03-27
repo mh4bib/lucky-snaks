@@ -1,4 +1,7 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHandPointer } from '@fortawesome/free-solid-svg-icons'
+
 import './Cards.css'
 const Cards = (props) => {
     const {card, addToDraw} = props
@@ -9,7 +12,8 @@ const Cards = (props) => {
             <div className='card-desc'>
                 <h2>{name}</h2>
                 <p>price: {price}</p>
-                <button onClick={()=> addToDraw(card)}>select</button>
+                <button onClick={()=> addToDraw(card)}>select <FontAwesomeIcon icon={faHandPointer} /></button>
+                
             </div>
         </div>
     );
