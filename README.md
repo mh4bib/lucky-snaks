@@ -1,5 +1,5 @@
 # Raffled-Snakes
-See [live preview](https://www.netlify.com/) of this project
+See [live preview](https://snazzy-speculoos-b88818.netlify.app/) of this project
 
 -----------------------------------------------
 
