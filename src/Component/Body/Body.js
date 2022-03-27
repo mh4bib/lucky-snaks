@@ -72,6 +72,7 @@ const Body = () => {
                 <button onClick={clearBtn} className='red-button'>clear all</button>
 
             </div>
+            
         </div>
     );
 };
