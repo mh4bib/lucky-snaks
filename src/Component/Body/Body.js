@@ -33,10 +33,12 @@ const Body = () => {
             chooseBtn(items);  
         }
         else{
-            console.log(items[random]);
-            setLuckyItem(items[random]);
+            setLuckyItem([items[random]]);
         }
-        
+    }
+    const clearBtn = () => {
+        setItems([]);
+        setLuckyItem([]);
     }
     // console.log(items);
 
@@ -61,9 +63,14 @@ const Body = () => {
                 }
 
                <button onClick={() => chooseBtn(items)} className='green-button'>choose random</button>
-               <button className='red-button'>clear all</button>
-               
-               
+                {
+                    luckyItem.map(luckyOne => <LuckyItem
+                    key={luckyOne.id}
+                    luckyOne = {luckyOne}
+                    ></LuckyItem>)
+                }
+                <button onClick={clearBtn} className='red-button'>clear all</button>
+
             </div>
         </div>
     );

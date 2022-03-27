@@ -16,7 +16,7 @@
 .green-button{
     background-color: rgb(125, 209, 0);
     border: 2px solid rgb(125, 209, 0);
-    margin-right: 10px;
+    margin: 10px;
 }
 .green-button:hover{
     color:  rgb(125, 209, 0);
@@ -25,7 +25,7 @@
 .red-button{
     background-color: red;
     border: 2px solid red;
-    margin-left: 10px;
+    margin: 10px;
 }
 .red-button:hover{
     color: red;
